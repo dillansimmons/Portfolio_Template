@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+
+<html>
+
+  <!-- Google Analytics -->
+  <script>
+  </script>
+ 
+<head>
+	
+<title>Stats</title>
+    
+<!-- Favicon -->    
+<link rel="icon" type="image/png" href="#" />
+
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+
+<!-- Font Awesome -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<!-- This is the list element stylesheet -->	
+<link rel="stylesheet" type="text/css" href="portfolio.css" />
+
+<!-- Chart.js.org -->
+<script src="js/chart.js"></script>
+
+<!-- CODE INSETS --> 
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<script src='js/rainbow.js' type='text/javascript'></script>
+
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js' type="text/javascript"></script>
+
+<!-- Stats CSS -->
+<link href='stylesheets/sample.css' rel='stylesheet' type='text/css'>
+
+
+<!-- This meta tag includes utf-8, keywords, description, noindex, nofollow and noarchive -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="#" />
+<meta name="description" content="#" />
+<meta name="trademark" content="#" />
+<meta name="author" content="#" />
+<meta name="publisher" content="#" />
+
+<!-- load effect - You can change the color or add a load image in the css -->
+<script type="text/javascript">
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
+</script>
+
+</head>
+
+<!--******************************************START HTML ************************************************-->
+
+<body>
+<div class="loader">
+</div>
+
+<!-- Back to home arrow - Dissapears in mobile -->
+<div id="header">
+  <div id="back_container">
+    <a href="index.html">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-arrow-circle-o-left fa-stack-2x" title="back to home"></i>
+      </span>
+    </a>
+  </div>
+</div>
+
+
+<div id="menu">
+  <ul>
+  	<li><a href="#about">Stats</a></li>
+  </ul><br />
+
+<!-- Chart.js Graphic -->  
+   <canvas id="canvas" height="100" width="100"></canvas>
+  <script>
+
+    var doughnutData = [
+        {
+          value: 30,
+          color:"#F7464A"
+        },
+        {
+          value : 50,
+          color : "#46BFBD"
+        },
+        {
+          value : 100,
+          color : "#FDB45C"
+        },
+        {
+          value : 20,
+          color : "#949FB1"
+        },
+        {
+          value : 60,
+          color : "#4D5360"
+        },
+        {
+          value : 20,
+          color : "#949FB1"
+        },
+
+      ];
+
+  var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+
+  </script>
+    <p>A brief stats page design</p> 
+</div> 
+
+<!-- Dev Skills. Change class name to change star value i.e: fivestar, fourstar, threehalfstar, etc -->
+
+    <div class="skills">
+      <div id="left">
+        <h1>Coding</h1>
+        <h3>HTML:<span class="fivestar"></span></h3>
+        <h3>CSS:<span class="fivestar"></span></h3>
+        <h3>JAVASCRIPT:<span class="threehalfstar"></span></h3>
+        <h3>PHP:<span class="twostar"></span></h3>
+      </div>
+      
+
+      <div id="right">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, rem aut expedita labore distinctio deserunt accusantium inventore possimus! Deleniti, sequi atque earum voluptatem laudantium ad suscipit reiciendis repudiandae recusandae cum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quod, totam corporis delectus consequatur nihil molestias nam quo beatae. Nulla, rem sunt odio consequuntur vitae voluptates deleniti est praesentium architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, veritatis, nihil, error aperiam harum non quasi odit enim fuga sit et culpa ex maiores maxime officiis dolorum saepe corporis repellendus.
+        </p>
+      </div>
+    </div>
+
+<!-- end Dev Skills -->
+
+<!-- Design Skills. Change class name to change star value i.e: fivestar, fourstar, threehalfstar, etc  -->
+
+    <div class="skills">
+      <div id="left">
+        <h1>Design</h1>
+        <h3>Illustrator:<span class="fivestar"></span></h3>
+        <h3>Photoshop:<span class="fourhalfstar"></span></h3>
+        <h3>InDesign:<span class="threestar"></span></h3>
+        <h3>Flash:<span class="onehalfstar"></span></h3>
+      </div>
+      
+
+      <div id="right">
+        <h2>TITLE</h2>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, corporis, repudiandae, amet non suscipit modi inventore quos a assumenda esse nobis quas enim blanditiis rem doloribus ipsa accusamus vero quasi.</span><span>Voluptatum, tempora, esse, mollitia odio tempore provident amet quae sit vitae magni quibusdam est ullam atque neque minima autem officiis accusamus id eveniet hic exercitationem non placeat ea nesciunt quaerat!</span>
+        </p>
+      </div>
+    </div>
+
+<!-- end Design Skills -->
+
+<!-- Tools. Change class name to change star value i.e: fivestar, fourstar, threehalfstar, etc  -->
+
+    <div class="skills">
+      <div id="left">
+        <h1>Tools &amp; Resources</h1>
+        <h3>Sublime:<span class="fivestar"></span></h3>
+        <h3>Chrome Dev Tools:<span class="fourhalfstar"></span></h3>
+        <h3>GitHub:<span class="threestar"></span></h3>
+      </div>
+      
+
+      <div id="right">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ad, vitae, quasi ut suscipit tempore deleniti architecto quidem repellat saepe eveniet voluptatum veritatis itaque sit accusamus dolorem animi eius dolorum! 
+        </p>
+      </div>
+    </div>
+
+<!-- end Tools -->
+
+   <div  class="content">
+      
+      <h2>Code Area</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, neque, voluptatibus, architecto rerum animi quos nam ipsum maiores natus vel porro soluta ab ea accusamus unde facilis voluptas aliquam cumque!</p>
+
+<!-- Rainbow.js Example --> 
+<pre>
+  <code data-language="html">
+      &lt;!-- Use RAINBOW.js to show off some code --&gt;
+      &lt;!doctype html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Thanks Rainbow.js&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+  </code>
+</pre>
+
+<p>Find Out more at <a href="http://craig.is/making/rainbows">Rainbow.js</a></p>
+
+    </div>
+
+<!-- Footer -->
+<footer id="footer">
+
+<!-- Footer Icons -->
+    <ul class="actions">
+      <li><a target="_blank" href="#"><span>DS</span></a></li>
+      <li><a target="_blank" href="#" class="fa solo fa-linkedin-square"><span>LinkedIn</span></a></li>
+      <li><a target="_blank" href="#" class="fa solo fa-tumblr"><span>Facebook</span></a></li>
+      <li><a target="_blank" href="#" class="fa solo fa-dribbble"><span>Dribbble</span></a></li>
+      <li><a target="_blank" href="#" class="fa solo fa-github-alt"><span>GitHub</span></a></li>
+    </ul>
+
+<!-- Footer Copy -->
+      <div class="copyright">
+        All work copyright 2008 -
+          <script language="JavaScript" type="text/javascript">
+              now = new Date
+              theYear=now.getYear()
+              if (theYear < 1900)
+              theYear=theYear+1900
+              document.write(theYear)
+          </script> 
+        Anyone
+      </div>
+    
+</footer>
+
+</body>
+</html>

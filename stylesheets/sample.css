@@ -1,0 +1,129 @@
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html, p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", "Helvetica", serif;
+  font-weight: normal; }
+
+code {
+  font-family: "Consolas", "Monaco", monospace;
+  font-weight: normal; }
+
+body, html, p, code {
+  color: #888888; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444; }
+
+pre {
+  overflow: scroll;
+  background: #eeeeee;
+  padding: 10px; }
+
+@media only screen and (max-width:960px) {
+  div                    { width:100% !important;}
+  #back_container { display:none !important;}
+  code {width:95%; !important;}
+  pre  {width:95%; !important;}
+}
+
+
+ #back_container {
+    z-index: 99; 
+  height: 5%; 
+  left:5; 
+  position:fixed; 
+  width:100%; 
+  margin-top:-8px;
+  margin-left:20px;
+  top:40%; 
+}
+
+.skills {
+  clear:both;
+  width: 980px;
+  margin: 80px auto; 
+  border-top:2px dashed #cccccc;
+}
+
+#left {
+  width: 32.9%;
+  float: left;
+  padding: 5px 15px;
+}
+
+#middle {
+  width: 32.9%; /* Account for margins + border values */
+  float: left;
+  padding: 5px 15px;
+  margin: auto;
+}
+
+#right {
+  width: 67%;
+  padding: 5px 15px;
+  float: left;
+}
+
+.content {
+  clear:both;
+  width: 980px;
+  margin: 80px auto;
+  padding-top: 20px;
+  padding-left:15px;
+  border-top:2px dashed #cccccc; }
+
+.content a{
+   color:#3D8494;
+   text-decoration: none;
+}
+
+.content a:hover {
+text-decoration:none; 
+color:#3eaee6;
+text-shadow: 0px 1px 1px #cccccc; 
+-webkit-transition: 0.2s; /* For Safari 3.1 to 6.0 */
+transition: 0.2s;
+}
+
+.formats .format {
+  display: inline-block; }
+
+.zip {
+  background: url("../images/zip.png");
+  display: block;
+  width: 128px;
+  height: 128px; }
+
+.tar {
+  background: url("../images/tar.png");
+  display: block;
+  width: 128px;
+  height: 128px; }
+
+.fork {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0; }
+
+.button {
+  display: block;
+  padding: 20px;
+  width: 200px;
+  color: white;
+  background: #888888;
+  margin: 20px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px; }
+
+pre .support.tag {
+  color: #000088; }
+pre .support.attribute {
+  color: #880000; }
+pre .string.value {
+  color: #008800; }
