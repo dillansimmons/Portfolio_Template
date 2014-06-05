@@ -1,7 +1,9 @@
 Portfolio_Template
 ==================
 
-A basic responsive portfolio, with slides, contact form, and stat page.
+A basic responsive personal portfolio, with slides, contact form, and stat page.
+
+Good for: Artists, Developers, Crafters, Etc, Etc.
 
 Example:
 
